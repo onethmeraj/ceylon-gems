@@ -21,8 +21,8 @@ export function AddToCartButton({
       variant={variant}
       className={
         variant === "default"
-          ? "flex-1 bg-stone-900 text-white hover:bg-stone-800 transition-colors"
-          : "flex-1 border-stone-300 bg-white text-stone-900 hover:bg-stone-100 transition-colors"
+          ? "h-12 sm:h-13 w-full flex-1 whitespace-nowrap rounded-full bg-stone-950 font-sans text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-md transition-all duration-300 hover:bg-stone-800 hover:shadow-xl hover:shadow-stone-900/10 active:scale-[0.97] px-6"
+          : "h-12 sm:h-13 w-full flex-1 whitespace-nowrap rounded-full border border-stone-300 bg-white font-sans text-xs font-semibold uppercase tracking-[0.15em] text-stone-900 shadow-xs transition-all duration-300 hover:border-stone-950 hover:bg-stone-950 hover:text-white active:scale-[0.97] px-6"
       }
       onClick={() => addToCart(gem)}
     >
